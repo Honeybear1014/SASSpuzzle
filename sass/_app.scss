@@ -10,13 +10,13 @@
   padding: 20px 0;
   background-color: var.$navy;
 
-  &>div.inner {
+  &>.inner {
     width: 100%;
     height: 100px;
     padding: 0 20px;
   }
   
-  &>div.flex {
+  &>.flex {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -27,15 +27,15 @@
     padding: 10px;
     background-color: var.$white;
 
-    &>li.purple {
+    &>.purple {
       @include mixin.btn(40px, 40px, 10px, 1);
     }
 
-    &>li.orange {
+    &>.orange {
       @include mixin.btn(40px, 40px, 10px, 2);
     }
 
-    &>li.blue {
+    &>.blue {
       @include mixin.btn(40px, 40px, 0px, 3);
     }
   }
@@ -59,7 +59,7 @@ article {
     &__list__purple {
       @include mixin.listStyle(40px);
 
-      &>li.purple {
+      &>.purple {
         @include mixin.btn(140px, 40px, 0px, 1);
       }
     }
@@ -67,7 +67,7 @@ article {
     &__list__orange {
       @include mixin.listStyle(10px);
 
-      &>li.orange {
+      &>.orange {
         @include mixin.btn(140px, 40px, 0px, 2);
       }
     }
@@ -75,14 +75,14 @@ article {
     &__list__blue {
       @include mixin.listStyle(10px);
 
-      &>li.blue {
+      &>.blue {
         @include mixin.btn(140px, 40px, 0px, 3);
       }
     }
   }
 }
 
-footer.footer {
+.footer {
   background-color: var.$brown;
   height: 100px;
   margin: 0 auto;
