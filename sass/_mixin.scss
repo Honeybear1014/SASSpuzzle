@@ -1,0 +1,16 @@
+@use 'variable' as var;
+
+@mixin btn($width, $height, $margin, $bgColor) {
+  width: $width;
+  height: $height;
+  margin-right: $margin;
+  background-color: nth(var.$buttonColor, $bgColor);
+}
+
+@mixin listStyle($margin) {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: $margin 60px 0px 40px;
+  background-color: var.$white;
+}
